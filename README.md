@@ -1,0 +1,9 @@
+-	Modul in care puteti sa rulati aplicatia:
+-	Downloadati aplicatia in PC.
+-	In terminal trebuie sa rulati createUser.js file pentru a uploada contul dumneavoastra personal in DB. (se creeaza contul de administrator)
+-	The createUser.js file este in eccomerce-backend folder si va trebui sa replicati linia 14 si 15 din acel cod cu datele dumneavoastra. In acests moment sunt credentialele mele username: "test@example.com" and passoword: Stanciuandrei11!. 
+-	Trebuie sa modificati totodata in .env file si app.js the MONGO_URI cu link-ul dumneavoastra personal de la mongodb atlas, deoarece in acest moment aplicatia ruleaza pe baza mea de date. 
+-	Deschideti doua terminale unul pentru ecommerce-frontend si unul pentru ecommerce-backend.
+-	Pentru ecommerce-fronted rulati npm start
+-	Pentru ecommerce-backend rulati npx nodemon src/server.js
+-	Rulati localhost:3000 in web pentru a deschide proiectul.
