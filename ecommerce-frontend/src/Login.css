@@ -1,0 +1,73 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222; /* Dark background */
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #333; /* Light dark background for the form */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.3);
+  text-align: center;
+}
+
+.cyberpunk-title {
+  font-family: "Orbitron", sans-serif; /* A cyberpunk style font */
+  color: #00ff99;
+  font-size: 48px;
+  text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 30px #ff0033,
+    0 0 40px #ff0033;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form label {
+  font-size: 16px;
+  color: #fff;
+}
+
+.login-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #00ff99;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+}
+
+.login-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: linear-gradient(45deg, orange, green);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgba(255, 100, 0, 0.5);
+}
+
+.error-message {
+  color: #ff0033;
+  margin-top: 10px;
+}

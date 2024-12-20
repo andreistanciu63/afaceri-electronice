@@ -1,0 +1,296 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222; /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  background-color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.cyberpunk-title {
+  color: orange; /* Neon Green */
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #00ff99; /* Neon Green border */
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+}
+
+.login-button {
+  padding: 12px;
+  font-size: 18px;
+  background: linear-gradient(
+    45deg,
+    orange,
+    green
+  ); /* Orange to Green button */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-button:hover {
+  transform: scale(1.05);
+}
+
+.error-message {
+  color: #ff0033; /* Red for errors */
+  margin-top: 10px;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #222;
+  padding: 15px 20px;
+  text-align: center;
+  position: absolute; /* Position navbar at the top */
+  top: 0; /* Align it to the top of the page */
+  left: 50%; /* Position it horizontally in the center */
+  transform: translateX(-50%); /* Offset to perfectly center the navbar */
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-item {
+  font-size: 18px;
+}
+
+.nav-link,
+.nav-button {
+  font-size: 16px; /* Same font size */
+  padding: 10px 20px; /* Same padding */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center; /* Ensures text is centered */
+}
+
+.nav-link {
+  background-color: #ff6600; /* Orange background */
+  color: white;
+}
+.nav-link:hover {
+  background-color: #00ff99; /* Neon green on hover */
+}
+
+.nav-button {
+  background-color: #ff6600; /* Orange background */
+  color: white;
+  border: none;
+}
+
+.nav-button:hover {
+  background-color: #00ff99; /* Neon green on hover */
+  transform: scale(1.1);
+}
+
+/* Movie List styles */
+.movie-list {
+  padding: 20px;
+  text-align: center;
+}
+
+.movie-list h1 {
+  font-size: 36px;
+  color: #00ff99; /* Neon green title */
+  margin-bottom: 20px;
+}
+
+.movie-list-items {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.movie-item {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.movie-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movie-item p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.movie-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.edit-button,
+.delete-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.edit-button {
+  background-color: #ff6600; /* Neon green */
+  color: white;
+  border: none;
+}
+
+.edit-button:hover {
+  background-color: #00ff99; /* Orange hover */
+}
+
+.delete-button {
+  background-color: #ff0033; /* Red for delete */
+  color: white;
+  border: none;
+}
+
+.delete-button:hover {
+  background-color: #cc0000; /* Darker red on hover */
+  transform: scale(1.1);
+}
+/* Movie Form Styles */
+.movie-form-container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px; /* Smaller form width */
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.movie-form-container h1 {
+  font-size: 28px; /* Slightly smaller title */
+  color: #00ff99; /* Neon green for the title */
+  margin-bottom: 20px;
+}
+
+.movie-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movie-form-container label {
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
+}
+
+.movie-form-container input,
+.movie-form-container textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #00ff99; /* Neon green border */
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  width: 100%; /* Ensure both inputs take up the full width of the container */
+}
+
+.movie-form-container textarea {
+  resize: vertical; /* Allow resizing the textarea vertically */
+  min-height: 120px;
+}
+
+.movie-form-container button {
+  padding: 12px;
+  font-size: 18px;
+  background: linear-gradient(
+    45deg,
+    #ff6600,
+    #00ff99
+  ); /* Orange to Green gradient button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.movie-form-container button:hover {
+  transform: scale(1.05); /* Hover effect to slightly enlarge the button */
+  background: linear-gradient(
+    45deg,
+    #00ff99,
+    #ff6600
+  ); /* Invert gradient on hover */
+}
+
+.movie-form-container button:active {
+  transform: scale(0.98); /* Slight shrink when clicked */
+}
+
+.movie-form-container .error-message {
+  color: #ff0033; /* Red error message color */
+  margin-top: 10px;
+}
+
+.mark-button {
+  position: absolute; /* Place the button at the top of the movie-item */
+  top: 0px; /* Adjust to your preferred spacing */
+  right: 0px; /* Align it to the right or center it as needed */
+  padding: 5px 10px;
+  font-size: 10px;
+  background-color: #00ff99; /* Neon green */
+  color: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.mark-button:hover {
+  background-color: #ff6600; /* Orange on hover */
+  transform: scale(1.1);
+}
+
+.movie-item {
+  position: relative; /* Enables positioning for child elements */
+}
